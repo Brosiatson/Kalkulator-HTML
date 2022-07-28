@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --x30-color: rgb(30, 30, 30);
+    --x50-color: rgb(50, 50, 50);
+    --x100-color: rgb(100, 100, 100);
+    --x0-color: rgb(0, 0, 0);
+    --yellow-color: rgb(255, 208, 0);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--x30-color);
+    position: relative;
+    font-family: 'Mukta', sans-serif;
+}
+
+header{
+    width: 40%;
+    height: 10%;    
+    position: absolute;
+    top: 7.5%;
+    left: 30%;
+    background: var(--yellow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+main{
+    width: 40%;
+    height: 70%;
+    top: 25%;
+    left: 30%;
+    position: absolute;
+    background: var(--x50-color);
+    border-radius: 20px;
+}
+
+.result-container{
+    width: 90%;
+    height: 20%;
+    border-radius: 20px;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    background: var(--x100-color);
+}
+
+.result-container span{
+    position: absolute;
+    right: 2%;
+    bottom: 0%;
+    font-size: 60px;
+}
+
+.operation-container{
+    width: 90%;
+    height: 65%;
+    top: 30%;
+    left: 5%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+}
+
+.operation-container button{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 50px;
+    background: var(--x100-color);
+    color: var(--x0-color);
+    font-family: 'Mukta', sans-serif;
+    transition: all .3s linear;
+}
+
+.operation-container button:hover{
+    background: var(--x30-color);
+    color: var(--yellow-color);
+}
